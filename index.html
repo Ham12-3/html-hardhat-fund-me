@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fund Me App</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="mx-40 my-20 border-4 border-indigo-600">
+            <div class="h-10 flex space-x-6 mx-20 my-20">
+                <h1 class="text-indigo-600 italic text-3xl flex-1">
+                    Fund Me Crowd Funding App
+                </h1>
+                <button
+                    class="text-xl bg-gradient-to-r from-indigo-600 to-blue-500 rounded-lg flex-1"
+                    id="connectButton"
+                >
+                    Connect
+                </button>
+            </div>
+
+            <div class="h-10 space-x-6 flex mx-20 my-20">
+                <button
+                    class="text-xl bg-gradient-to-r to-blue-500 from-indigo-600 rounded-lg flex-1"
+                    id="fundButton"
+                >
+                    Fund
+                </button>
+                <form class="flex-1 flex">
+                    <label class="text-xl flex-1" for="fund">ETH Amount</label>
+                    <input
+                        class="flex-1 border-4 border-indigo-500 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 text-xl"
+                        id="ethAmount"
+                        placeholder="0.1"
+                        type="number"
+                    />
+                </form>
+            </div>
+            <div class="h-10 space-x-6 flex mx-20 my-20">
+                <button
+                    class="text-xl bg-gradient-to-r from-indigo-600 to-blue-500 rounded-lg flex-1"
+                    id="balanceButton"
+                >
+                    Get balance
+                </button>
+                <h3 class="text-xl flex-1" id="balance"></h3>
+            </div>
+            <div class="h-10 space-x-6 flex mx-20 my-20">
+                <button
+                    class="text-xl bg-gradient-to-r from-indigo-600 to-blue-500 rounded-lg flex-1"
+                    id="withdrawButton"
+                >
+                    Withdraw
+                </button>
+                <h3 class="text-xl flex-1" id="withdraw"></h3>
+            </div>
+        </div>
+
+        <!--form-->
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
